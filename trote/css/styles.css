@@ -2,18 +2,19 @@ body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #080063;
     text-align: center;
 }
 header{
-    background-color: #28a745;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color:rgb(239, 196, 24);
     color: white;
     padding: 15px 0;
     font-size: 24px;/*espaçamento interno 15px para os lados, 0 cima e baixo*/
-    border: 1px solid black;
+    border: none;
 }
 nav{
-    background-color: #007bff;
+    background-color: rgb(199, 164, 23);
     padding: 10px;
     display: flex;
     justify-content: space-between;/*alinhamento na horizontal - espaçamento entre os links*/
@@ -26,10 +27,11 @@ nav{
 /*configura o estilo das âncoras que estão dentro do nav*/
 nav a {
     color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-decoration: none; /*não faz decoração no link*/
     padding: 10px 15px;
     font-size: 18px; /*tamanho da fonte*/
-    background: #005663;
+    background: #080063;
     border-radius: 5px;/*borda de canto arredondado*/
 }
 nav a:hover{
@@ -50,4 +52,55 @@ img{
 }
 h2{
     text-align: center;
+}
+.arrecadação{
+    background: wheat;
+    margin: 20px auto;
+    width: 80%;
+    text-align: justify;
+    border-radius: 10px;
+    padding: 20px;
+}
+.escala{
+    background: wheat;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    text-align: justify;
+    border-radius: 10px;
+}
+.avulsos{
+    background: wheat;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    text-align: justify;
+    border-radius: 10px;
+}
+.sangue{
+    background: wheat;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    text-align:justify;
+    border-radius: 10px;
+}
+h3{
+    text-align: center;
+}
+.acao{
+    background: wheat;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    text-align: justify;
+    border-radius: 10px;
+}
+.meta{
+    background: wheat;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    text-align: justify;
+    border-radius: 10px;
 }
