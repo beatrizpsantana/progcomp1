@@ -104,3 +104,11 @@ h3{
     text-align: justify;
     border-radius: 10px;
 }
+.homenagem{
+    background: wheat;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    text-align: justify;
+    border-radius: 10px;
+}
