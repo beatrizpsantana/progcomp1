@@ -112,3 +112,25 @@ h3{
     text-align: justify;
     border-radius: 10px;
 }
+.mascote{
+    background: wheat;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    text-align: justify;
+    border-radius: 10px;
+}
+table{
+    margin: auto;
+    border-collapse: collapse;
+    width: 50%;
+    text-align: center;
+}
+th,td{
+    border: 1px solid black;
+    padding: 10px;
+}
+th{
+    background-color: #003d82;
+    color: white;
+}
