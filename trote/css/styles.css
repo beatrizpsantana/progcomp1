@@ -137,3 +137,23 @@ th{
 .tableformato{
     text-align: justify;
 }
+#Laranja{
+    background-color: orange;
+    color: white;
+}
+#Preta{
+    background-color: black;
+    color: white;
+}
+#Roxa{
+    background-color: purple;
+    color: white;
+}
+#Verde{
+    background-color: green;
+    color: white;
+}
+#Vermelha{
+    background-color: red;
+    color: white;
+}
