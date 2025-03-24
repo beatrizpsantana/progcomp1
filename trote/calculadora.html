@@ -1,0 +1,45 @@
+<!DOCTYPE html><!--html :5-->
+<html lang="pt-br">
+<head><!--informações da página-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trote Solidário 2025</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script src="./js/scripts.js"></script>
+</head>
+<body>
+    <header><!--cabeçalho do body-->
+        Trote Solidário - 2025
+    </header>
+    <nav>
+        <div id="links-menu">
+            <a href="index.html">Home</a>
+            <a href="introducao.html"> Introdução</a>
+            <a href="objetivo.html"> Objetivo</a>
+            <a href="formato.html"> Formato</a>
+            <a href="gincana.html"> Gincana</a>
+            <a href="integraçao.html"> Integração</a>
+            <a href="observaçoes.html"> Observações</a>
+            <a href="calculadora.html"> Calculadora</a>
+        </div>
+        <img src="images/trote images.jpg" alt="Trote Solidário"/>
+    </nav>
+    <div class="container">
+        <h2> Calculadoras de Pontuação</h2>
+        <form> <!--formulário para entrada de dados do usuário-->
+            <div class="campos">
+                <label>Ação Social</label>
+                <input type="number" id="acaoSocial"/>
+            </div>
+            <div class="campos">
+                <label>Homenagem</label>
+                <input type="number" id="Homenagem"/>
+            </div>
+            <div class="campos">
+                <button type="button" onclick="calcular()">Calcular</button>
+                <label id="resposta"></label>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
