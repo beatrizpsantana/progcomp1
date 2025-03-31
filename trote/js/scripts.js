@@ -9,8 +9,31 @@ function calcular() {
     let Homenagem = document.getElementById("Homenagem").value
     soma = soma + Number(Homenagem)
 
-    let kitAlimentacao = document.getElementById("kitAlimentacao").value
-    soma = soma + (30 * Number(kitAlimentacao))
+    let kitAlimentacao = Number(document.getElementById("kitAlimentacao").value)
+    //recupera a cor da equipe
+    let equipe = document.getElementById("equipe").value
+    let pontoskitAlimentacao = 0 //guarda a pontuação de kit
+    if (equipe == "Laranja"){
+        //equipe é laranja
+        if(Number (kitAlimentacao)>= 97){
+            pontoskitAlimentacao = 5000 + ((kitAlimentacao-97) * 30)
+        }
+        else if (kitAlimentacao >= 78){
+            pontoskitAlimentacao = 4000 + ((kitAlimentacao - 78) * 30)
+        }
+        else if(kitAlimentacao >= 49){
+            pontoskitAlimentacao = 2500 + ((kitAlimentacao - 49) * 30)
+        }
+        else if(kitAlimentacao >= 19){
+            pontoskitAlimentacao = 1000 + ((kitAlimentacao) * 30)
+        }
+        else if(kitAlimentacao < 19){
+            pontoskitAlimentacao = kitAlimentacao * 30
+        }
+    }
+    i
+    alert(pontoskitAlimentacao)
+    soma = soma + pontoskitAlimentacao
 
     let lataSuplemento = document.getElementById("lataSuplemento").value
     soma = soma + (15 * Number(lataSuplemento))
