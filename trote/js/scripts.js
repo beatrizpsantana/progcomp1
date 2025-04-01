@@ -68,8 +68,88 @@ function calcular() {
             pontoskitSuplemento = kitAlimentacao*30 + lataSuplemento*15
         }
     }
-    alert(pontoskitSuplemento)
+    if(equipe == "Verde"){
+        //equipe é verde
+        if(Number (kitAlimentacao)>=88 && (lataSuplemento)>=44){
+            pontoskitSuplemento = 5000 + ((kitAlimentacao-88)*30) + ((lataSuplemento-44)*15)
+        }
+        else if(kitAlimentacao>=70 && lataSuplemento>=35){
+            pontoskitSuplemento = 4000 + ((kitAlimentacao-70)*30) + ((lataSuplemento-35)*15)
+        }
+        else if(kitAlimentacao>=44 && lataSuplemento>=22){
+            pontoskitSuplemento = 2500 + ((kitAlimentacao-44)*30) + ((lataSuplemento=22)*15)
+        }
+        else if(kitAlimentacao>=18 && lataSuplemento>=9){
+            pontoskitSuplemento = 1000 + ((kitAlimentacao-18)*30) + ((lataSuplemento-9)*15)
+        }
+        else if(kitAlimentacao<18 && lataSuplemento<9){
+            pontoskitSuplemento = kitAlimentacao*30 + lataSuplemento*15
+        }
+    }
+    if(equipe == "Vermelha"){
+        //equipe é vermelha
+        if(Number (kitAlimentacao)>= 93 && (lataSuplemento)>=47){
+            pontoskitSuplemento = 5000 + ((kitAlimentacao-93)*30) + ((lataSuplemento-47)*15)
+        }
+        else if(kitAlimentacao>=74 && lataSuplemento>=38){
+            pontoskitSuplemento = 4000 + ((kitAlimentacao-74)*30) + ((lataSuplemento-38)*15)
+        }
+        else if(kitAlimentacao>=47 && lataSuplemento>=24){
+            pontoskitSuplemento = 2500 + ((kitAlimentacao-47)*30) + ((lataSuplemento-24)*15)
+        }
+        else if(kitAlimentacao>=19 && lataSuplemento>=9){
+            pontoskitSuplemento = 1000 + ((kitAlimentacao-19)*30) + ((lataSuplemento-9)*15)
+        }
+        else if(kitAlimentacao<19 && lataSuplemento<9){
+            pontoskitSuplemento = kitAlimentacao*30 + lataSuplemento*15
+        }
+    }
+   
     soma = soma + pontoskitSuplemento
+
+    let sangue = Number(document.getElementById("sangue").value)
+    let pontosangue = 0 //guarda a pontuação de doação de sangue
+    if(equipe == "Laranja"){
+        if(Number (sangue)>=49){
+            pontosangue = 2500 + ((sangue-49)*20)
+        }
+        else if (sangue<49){
+            pontosangue = sangue*20
+        }
+    }
+    if(equipe == "Preta"){
+        if(Number(sengue)>=52){
+            pontosangue = 2500 + ((sangue-52)*20)
+        }
+        else if(sangue<52){
+            pontosangue = sangue *20
+        }
+    }
+    if(equipe == "Roxa"){
+        if(Number(sangue)>= 51){
+            pontosangue = 2500 + ((sangue-51)*20)
+        }
+        else if(sangue<51){
+            pontosangue = sangue*20
+        }
+    }
+    if(equipe == "Verde"){
+        if(Number(sangue)>=44){
+            pontosangue = 2500 + ((sangue-44)*20)
+        }
+        else if(sangue<44){
+            pontosangue = sangue*20
+        }
+    }
+    if(equipe == "Vermelha"){
+        if(Number(sangue)>=47){
+            pontosangue = 2500 + ((sangue-47)*20)
+        }
+        else if(sangue<47){
+            pontosangue = sangue *20
+        }
+    }
+    soma = soma + pontosangue
 
     
     let pctArroz5 = document.getElementById("pctArroz5").value
