@@ -1,4 +1,4 @@
-function calcular() {
+ function calcular() {
     let soma = 0
 
     //recupera o valor da Ação Social digitado
@@ -28,9 +28,6 @@ function calcular() {
         else if(kitAlimentacao >= 19 && lataSuplemento>=10){
             pontoskitSuplemento = 1000 + ((kitAlimentacao) * 30) + ((lataSuplemento-10)*15)
         }
-        else if(kitAlimentacao < 19 && lataSuplemento<10){
-            pontoskitSuplemento = kitAlimentacao * 30 + lataSuplemento*15
-        }
     }
     if (equipe == "Preta"){
         //equipe é preta
@@ -45,9 +42,6 @@ function calcular() {
         }
         else if(kitAlimentacao >=21 && lataSuplemento>= 10){
             pontoskitSuplemento = 1000 + ((kitAlimentacao - 21)*30) + ((lataSuplemento-10)*15)
-        }
-        else if(kitAlimentacao <21 && lataSuplemento<10){
-            pontoskitSuplemento = kitAlimentacao * 30 + lataSuplemento*15
         }
     }
     if(equipe == "Roxa"){
@@ -64,9 +58,6 @@ function calcular() {
         else if(kitAlimentacao>=20 && lataSuplemento>=10){
             pontoskitSuplemento = 1000 + ((kitAlimentacao-20)*30) + ((lataSuplemento-10)*15)
         }
-        else if (kitAlimentacao<20 && lataSuplemento<10){
-            pontoskitSuplemento = kitAlimentacao*30 + lataSuplemento*15
-        }
     }
     if(equipe == "Verde"){
         //equipe é verde
@@ -82,9 +73,6 @@ function calcular() {
         else if(kitAlimentacao>=18 && lataSuplemento>=9){
             pontoskitSuplemento = 1000 + ((kitAlimentacao-18)*30) + ((lataSuplemento-9)*15)
         }
-        else if(kitAlimentacao<18 && lataSuplemento<9){
-            pontoskitSuplemento = kitAlimentacao*30 + lataSuplemento*15
-        }
     }
     if(equipe == "Vermelha"){
         //equipe é vermelha
@@ -99,9 +87,6 @@ function calcular() {
         }
         else if(kitAlimentacao>=19 && lataSuplemento>=9){
             pontoskitSuplemento = 1000 + ((kitAlimentacao-19)*30) + ((lataSuplemento-9)*15)
-        }
-        else if(kitAlimentacao<19 && lataSuplemento<9){
-            pontoskitSuplemento = kitAlimentacao*30 + lataSuplemento*15
         }
     }
    
