@@ -29,7 +29,7 @@
             pontoskitSuplemento = 1000 + ((kitAlimentacao) * 30) + ((lataSuplemento-10)*15)
         }
     }
-    if (equipe == "Preta"){
+    else if (equipe == "Preta"){
         //equipe é preta
         if(Number (kitAlimentacao)>= 103 && (lataSuplemento)>=52){
             pontoskitSuplemento = 5000 + ((kitAlimentacao - 103)*30) + ((lataSuplemento-52)*15)
@@ -44,7 +44,7 @@
             pontoskitSuplemento = 1000 + ((kitAlimentacao - 21)*30) + ((lataSuplemento-10)*15)
         }
     }
-    if(equipe == "Roxa"){
+    else if(equipe == "Roxa"){
         //equipe é Roxa
         if(Number (kitAlimentacao)>=102 && (lataSuplemento)>=51){
             pontoskitSuplemento = 5000 + ((kitAlimentacao-102)*30) + ((lataSuplemento-51)*15)
@@ -59,7 +59,7 @@
             pontoskitSuplemento = 1000 + ((kitAlimentacao-20)*30) + ((lataSuplemento-10)*15)
         }
     }
-    if(equipe == "Verde"){
+    else if(equipe == "Verde"){
         //equipe é verde
         if(Number (kitAlimentacao)>=88 && (lataSuplemento)>=44){
             pontoskitSuplemento = 5000 + ((kitAlimentacao-88)*30) + ((lataSuplemento-44)*15)
@@ -68,13 +68,13 @@
             pontoskitSuplemento = 4000 + ((kitAlimentacao-70)*30) + ((lataSuplemento-35)*15)
         }
         else if(kitAlimentacao>=44 && lataSuplemento>=22){
-            pontoskitSuplemento = 2500 + ((kitAlimentacao-44)*30) + ((lataSuplemento=22)*15)
+            pontoskitSuplemento = 2500 + ((kitAlimentacao-44)*30) + ((lataSuplemento-22)*15)
         }
         else if(kitAlimentacao>=18 && lataSuplemento>=9){
             pontoskitSuplemento = 1000 + ((kitAlimentacao-18)*30) + ((lataSuplemento-9)*15)
         }
     }
-    if(equipe == "Vermelha"){
+    else{ //assumo que a equipe é vermelha
         //equipe é vermelha
         if(Number (kitAlimentacao)>= 93 && (lataSuplemento)>=47){
             pontoskitSuplemento = 5000 + ((kitAlimentacao-93)*30) + ((lataSuplemento-47)*15)
@@ -102,15 +102,15 @@
             pontosangue = sangue*20
         }
     }
-    if(equipe == "Preta"){
-        if(Number(sengue)>=52){
+    else if(equipe == "Preta"){
+        if(Number(sangue)>=52){
             pontosangue = 2500 + ((sangue-52)*20)
         }
         else if(sangue<52){
             pontosangue = sangue *20
         }
     }
-    if(equipe == "Roxa"){
+    else if(equipe == "Roxa"){
         if(Number(sangue)>= 51){
             pontosangue = 2500 + ((sangue-51)*20)
         }
@@ -118,7 +118,7 @@
             pontosangue = sangue*20
         }
     }
-    if(equipe == "Verde"){
+    else if(equipe == "Verde"){
         if(Number(sangue)>=44){
             pontosangue = 2500 + ((sangue-44)*20)
         }
@@ -126,7 +126,7 @@
             pontosangue = sangue*20
         }
     }
-    if(equipe == "Vermelha"){
+    else{ //assumo que a equipe é vermelha
         if(Number(sangue)>=47){
             pontosangue = 2500 + ((sangue-47)*20)
         }
@@ -157,7 +157,19 @@
 
     let Leite = document.getElementById("Leite").value
     soma = soma + (2 * Number(Leite))
+    
+    let registro = document.getElementById("registro").value
+    soma = soma + Number(registro)
 
+    let mascote = document.getElementById("Mascote").value
+    soma = soma + Number(mascote)
+
+    let Caracterização = document.getElementById("Caracterização").value
+    soma = soma + Number(Caracterização)
+
+    let extra = document.getElementById("extra").value
+    soma = soma + Number(extra)
+    
     //devolve o resultado para o html
     document.getElementById("soma").innerHTML = soma.toFixed(2)
 }
