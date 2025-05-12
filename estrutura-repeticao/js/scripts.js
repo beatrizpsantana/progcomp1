@@ -40,3 +40,67 @@ function pesquisaSatisfacao(){
     alert(`A média das notas é ${media.toFixed(1)}\nTotal de Satisfeitos: ${satisfeitos}\nTotal de Insatisfeitos: ${insatisfeito}`)
 
 } 
+
+function exe3(){
+    let participante = 1
+    let idade
+    let quantidade = 0
+    let etaria1 = 0, etaria2=0, etaria3=0, etaria4=0, etaria5=0
+
+    while(participante <= 8){
+        idade = Number(prompt(`Informe sua idade (Participante ${participante})`))
+        if(idade>=0 && idade <= 15){
+            etaria1++
+        }
+        else if(idade >= 16 && idade <=30){
+            etaria2++
+        }
+        else if(idade >= 31 && idade <= 45){
+            etaria3++
+        }
+        else if(idade >= 46 && idade <= 60){
+            etaria4++
+        }
+        else if(idade >= 61 && idade <= 130){
+            etaria5++
+        }
+        else{
+            alert(`Idade Inválida`)
+            continue
+        }  
+        participante++
+    }
+    let porcentagem1 = etaria1 * 12.5
+    let porcentagem2 = etaria5 * 12.5
+    alert(`A quantidade de pessoas em cada faixa etária é:\n1ª Faixa: ${etaria1}\n2ª Faixa: ${etaria2}\n3ª Faixa: ${etaria3}\n4ª Faixa: ${etaria4}\n5ª Faixa: ${etaria5}
+        \nA porcentagem de pessoas na 1ª Faixa é ${porcentagem1}%\nPorcentagem de pessoas na 5ª Faixa é ${porcentagem2}%`)
+}
+
+function exe1 (){
+    let a, b, c, d, aux
+    let grupo=1
+    while(grupo<=5){
+        let conta =1
+        a = Number(prompt(`Informe o valor de A`))
+        b = Number(prompt(`Informe o valor de B`))
+        c = Number(prompt(`Informe o valor de C`))
+        d =  Number(prompt(`Informe o valor de D`))
+
+        while(conta <= 3){
+            if(a>b){
+                aux=a; a = b; b=aux
+            }
+            if(b>c){
+                aux=b; b=c; c=aux
+            }
+            if(c>d){
+                aux=c; c=d, d=aux 
+            }
+            conta++
+        }
+        alert(`Ordem crescente ${a} ${b} ${c} ${d}`)
+        alert(`Ordem decrescente ${d} ${c} ${b} ${a}`)
+        grupo++
+    }
+    
+}
