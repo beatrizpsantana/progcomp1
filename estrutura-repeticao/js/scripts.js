@@ -44,7 +44,6 @@ function pesquisaSatisfacao(){
 function exe3(){
     let participante = 1
     let idade
-    let quantidade = 0
     let etaria1 = 0, etaria2=0, etaria3=0, etaria4=0, etaria5=0
 
     while(participante <= 8){
@@ -103,4 +102,25 @@ function exe1 (){
         grupo++
     }
     
+}
+function exe2(){
+    let preço = 5
+    let quantidade = 120
+    let lucro
+    let aux = ""
+    let maiorl = 0, quantml = 0, preçoml = 0
+    const despesa = 200
+    while(preço >= 1){
+        lucro = preço * quantidade - despesa
+        if(lucro > maiorl){
+            maiorl = lucro
+            preçoml = preço
+            quantml = quantidade
+        }
+        aux = aux + "\n" + (`Preço: ${preço} Quantidade: ${quantidade} Despesa: ${despesa} Lucro: ${lucro}`)
+        preço = preço - 0.5
+        quantidade = quantidade + 26
+    }
+    alert(aux)
+    alert(`Maior lucro: ${maiorl} com preço ${preçoml} e quantidade de ${quantml}`)
 }
