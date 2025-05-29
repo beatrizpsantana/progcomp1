@@ -124,3 +124,68 @@ function exe2(){
     alert(aux)
     alert(`Maior lucro: ${maiorl} com preço ${preçoml} e quantidade de ${quantml}`)
 }
+
+function exe4(){
+    let valor
+    let multiplo = 1
+    let resultado
+    let aux = ""
+
+    valor = Number(prompt(`Informe o número de deseja multiplicar: `))
+
+    while(multiplo <= 10){
+        resultado = multiplo * valor 
+
+        aux = aux + "\n" + (`${valor} X ${multiplo} = ${resultado}`)
+        multiplo++
+    }
+
+    alert(`Tabuada do ${valor}`)
+    alert(aux)
+}
+
+function exe5(){
+    let valor = 1
+    let multiplo = 1
+    let resultado
+    let aux = ""
+
+    while(valor <= 10){
+       
+        while(multiplo <= 10){
+            resultado = multiplo * valor 
+            aux = aux + "\n" + (`${valor} X ${multiplo} = ${resultado}`)
+            multiplo++
+        }
+        
+        multiplo = multiplo - 10
+        valor++
+    }
+
+    console.log(aux)
+}
+
+function exe6(){
+    let p = 0
+    let v = 0
+    let valor = 0
+    let venda = 1
+    let codigo
+
+    for(venda = 1; venda <= 5; venda++){
+        do{valor = Number(prompt(`Informe o valor da compra`))}
+        while(valor < 0)
+        do{
+        codigo = prompt(`Informe o código V (à vista) P (à prazo)`).toUpperCase()
+        }
+        while(codigo != "V" && codigo != "P")
+        if(codigo == "P"){
+            p = p + valor
+        } 
+        else{
+            v = v + valor
+        }
+    }
+
+    alert(`O valor total de compras foi: ${p+v}\nCompras a prazo: ${p}\nCompras a vista: ${v}\nValor total de primeiras parcelas: ${p/3}`)
+}
