@@ -189,3 +189,29 @@ function exe6(){
 
     alert(`O valor total de compras foi: ${p+v}\nCompras a prazo: ${p}\nCompras a vista: ${v}\nValor total de primeiras parcelas: ${p/3}`)
 }
+
+function exe7(){
+    let idade=0, peso=0, altura=0, pessoa=0
+    let anos = 0 , somaAltura = 0, quantIdade1020 = 0, quantpeso40 = 0
+
+    for(pessoa =1; pessoa <= 5; pessoa++){
+        do{idade = Number(prompt(`Informe sua idade: `))}
+        while(idade < 0)
+        do{peso = Number(prompt(`Informe seu peso: `))}
+        while(peso < 0)
+        do{altura = Number(prompt(`Informe sua altura: `))}
+        while(altura<0)
+
+        if(idade > 50){
+            anos++
+        }
+        if(idade >= 10 && idade <= 20){
+            somaAltura = somaAltura + altura
+            quantIdade1020++
+        }
+        if(peso < 40){
+            quantpeso40++
+        }
+    }
+    alert(`Item 1: ${anos}\nItem 2: ${somaAltura / quantIdade1020}\nItem 3: ${quantpeso40 / 5 * 100}`)
+}
